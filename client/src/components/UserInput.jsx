@@ -42,7 +42,7 @@ export const UserInput = () => {
       console.log(publicId);
 
       const detailsResponse = await fetch(
-        "http://localhost:8000/api/get-image-details",
+        "https://web-snap.onrender.com/api/get-image-details",
         {
           method: "POST",
           body: JSON.stringify({ publicId }), // Send publicId
